@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 function App() {
   const [tonConnectUI] = useTonConnectUI();
   const [connected, setConnected] = useState(false);
-  const [balance, setBalance] = useState(0.124);
+  const [balance] = useState(0.124);
 
   useEffect(() => {
     const unsubscribe = tonConnectUI.onStatusChange((wallet) => {
